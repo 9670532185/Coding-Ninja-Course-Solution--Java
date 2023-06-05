@@ -1,0 +1,72 @@
+//
+Code : Star Pattern
+Send Feedback
+Print the following pattern
+Pattern for N = 4
+
+
+
+Hint
+As taught in the video, you just have to modify the code so that instead of printing numbers, it should output stars ('*').
+The dots represent spaces.
+
+
+
+Input Format :
+N (Total no. of rows)
+Output Format :
+Pattern in N lines
+//
+
+.....................................................................................................................................................................................................................
+.....................................................................................................................................................................................................................
+.....................................................................................................................................................................................................................
+.....................................................................................................................................................................................................................
+....................................................................................................................................................................................................................
+
+
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+		/* Your class should be named Solution.
+	 	* Read input as specified in the question.
+	 	* Print output as specified in the question.
+		*/
+        int n;
+        Scanner obj=new Scanner(System.in);
+        n=obj.nextInt();
+        int row=1;
+        while(row<=n)
+        {
+            int p=1;
+            while(p<=n-row)
+            {
+                System.out.print(" ");
+                p=p+1;
+            }
+            int col=1;
+            while(col<=row)
+            {
+                System.out.print("*");
+                col=col+1;
+               // col=col-1;
+            }
+            int k=1;
+            while(k<row)
+                
+            {
+               System.out.print("*");
+                k=k+1; 
+            }
+            System.out.println( );
+            row=row+1;
+        }
+        
+		
+	}
+
+}
+
